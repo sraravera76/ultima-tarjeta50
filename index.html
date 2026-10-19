@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIVEL 50 DESBLOQUEADO | Mónica Alejandra</title>
+<style>
+:root {
+  --rosa: #e8a0b4;
+  --rosa-oscuro: #b94f76;
+  --dorado: #b99a53;
+  --crema: #fffaf7;
+  --texto: #674653;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--texto);
+  background: repeating-linear-gradient(
+    90deg, #fff 0, #fff 48px,
+    #f9e2e9 48px, #f9e2e9 96px
+  );
+}
+button, input, select, textarea { font: inherit; }
+button, .btn {
+  cursor: pointer;
+  border: 1px solid var(--dorado);
+  background: var(--rosa-oscuro);
+  color: white;
+  padding: 13px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+}
+button:hover, .btn:hover { background: #923956; }
+.cover {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  background: repeating-linear-gradient(
+    90deg, #fff 0, #fff 48px,
+    #f6d9e3 48px, #f6d9e3 96px
+  );
+  transition: opacity 1s, visibility 1s;
+}
+.cover-card {
+  max-width: 520px;
+  width: 100%;
+  padding: 38px 22px;
+  text-align: center;
+  border: 2px solid var(--dorado);
+  outline: 5px double var(--dorado);
+  outline-offset: -12px;
+  background: rgba(255,250,247,.97);
+  box-shadow: 0 12px 40px #9b536533;
+}
+.cover h1 { font-size: clamp(2rem, 8vw, 3.5rem); }
+.cover small { letter-spacing: 4px; }
+.cover.closed { opacity: 0; visibility: hidden; pointer-events: none; }
+main {
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 16px;
+}
+.paper {
+  text-align: center;
+  background: var(--crema);
+  border: 2px solid var(--dorado);
+  outline: 5px double var(--dorado);
+  outline-offset: -12px;
+  padding: clamp(25px, 6vw, 60px) 20px;
+  box-shadow: 0 12px 40px #8d4a5d22;
+}
+.eyebrow { letter-spacing: 4px; font-size: .8rem; }
+h1, h2 { color: var(--rosa-oscuro); }
+h1 { font-size: clamp(2.2rem, 8vw, 4.2rem); margin: 18px 0; }
+h2 { margin-top: 34px; }
+.gold { color: var(--dorado); }
+.name { font-size: clamp(1.8rem, 6vw, 3rem); font-style: italic; }
+.rule { color: var(--dorado); letter-spacing: 7px; margin: 22px; }
+.details { line-height: 1.9; font-size: 1.08rem; }
+.countdown {
+  display: flex; justify-content: center; flex-wrap: wrap;
+  gap: 10px; margin: 25px 0;
+}
+.time {
+  background: #f9e6ec; border: 1px solid #e5c58b;
+  padding: 14px 10px; min-width: 75px; border-radius: 12px;
+}
+.time strong { display: block; font-size: 1.8rem; color: var(--rosa-oscuro); }
+form { text-align: left; max-width: 580px; margin: auto; }
+.field { margin: 18px 0; }
+label, legend { font-weight: bold; }
+input[type="text"], textarea, select {
+  display: block; width: 100%; margin-top: 8px;
+  padding: 12px; border: 1px solid #d9b6c1;
+  border-radius: 9px; background: white; color: var(--texto);
+}
+.options { display: grid; grid-template-columns: repeat(auto-fit,minmax(190px,1fr)); gap: 9px; margin-top: 10px; }
+.options label { font-weight: normal; background: #fff0f4; padding: 10px; border-radius: 8px; }
+footer { margin-top: 30px; font-style: italic; }
+.note { font-size: .9rem; line-height: 1.6; }
+@media(max-width:480px) {
+  .time { min-width: 65px; }
+  .paper { padding-left: 16px; padding-right: 16px; }
+}
+</style>
+</head>
+<body>
+
+<div class="cover" id="cover">
+  <div class="cover-card">
+    <div class="gold">✦ &nbsp; UNA INVITACIÓN ESPECIAL &nbsp; ✦</div>
+    <p class="eyebrow">ESTÁS INVITADO/A A CELEBRAR</p>
+    <h1>NIVEL 50<br>DESBLOQUEADO</h1>
+    <div class="rule">✧ ❀ ✧</div>
+    <p>Una vida de historias, mil motivos para brindar.</p>
+    <p class="name">Mónica Alejandra</p>
+    <button onclick="abrirInvitacion()">Abrir mi invitación ✨</button>
+  </div>
+</div>
+
+<main>
+  <section class="paper">
+    <p class="eyebrow gold">SAVE THE DATE · 2026</p>
+    <h1>NIVEL 50<br>DESBLOQUEADO</h1>
+    <div class="rule">✧ ❀ ✧</div>
+    <p class="name">Mónica Alejandra</p>
+    <p class="details">
+      ¡Cumplo 50 y quiero festejarlo con vos!<br>
+      Medio siglo de aventuras merece una celebración inolvidable.
+    </p>
+
+    <div class="rule">♡ &nbsp; ♡ &nbsp; ♡</div>
+    <h2>Agendá la fecha</h2>
+    <p class="details">
+      <strong>Sábado 21 de noviembre de 2026</strong><br>
+      A las 13:00 horas<br>
+      <strong>Salón Pinecoop</strong><br>
+      Ruta 10 km 36.500
+    </p>
+
+    <h2>La cuenta regresiva</h2>
+    <div class="countdown" id="countdown">
+      <div class="time"><strong>--</strong>Días</div>
+      <div class="time"><strong>--</strong>Horas</div>
+      <div class="time"><strong>--</strong>Minutos</div>
+      <div class="time"><strong>--</strong>Segundos</div>
+    </div>
+
+    <a class="btn" target="_blank" rel="noopener"
+       href="https://www.google.com/maps/search/?api=1&query=Salon+Pinecoop+Ruta+10+km+36.500+Uruguay">
+       📍 Ver ubicación
+    </a>
+    <a class="btn" href="#confirmacion">💌 Confirmar asistencia</a>
+
+    <div class="rule">✧ ❀ ✧</div>
+    <h2>Un poquito de música</h2>
+    <p>Para ir entrando en clima, escuchá una canción especial.</p>
+    <a class="btn" target="_blank" rel="noopener"
+       href="https://www.youtube.com/results?search_query=John+Mayer+Gravity+official">
+       ♫ Escuchar Gravity — John Mayer
+    </a>
+    <p class="note">La música se abre en YouTube para que puedas reproducirla.</p>
+
+    <div class="rule">✧ ❀ ✧</div>
+    <h2 id="confirmacion">¡Quiero saber tus preferencias!</h2>
+    <p>Completá esta pequeña encuesta para ayudarme a preparar la fiesta.</p>
+
+    <form id="rsvp">
+      <div class="field">
+        <label for="nombre">Tu nombre</label>
+        <input id="nombre" name="nombre" type="text" required
+               placeholder="Escribí tu nombre">
+      </div>
+
+      <div class="field">
+        <label for="asistencia">¿Vas a acompañarme?</label>
+        <select id="asistencia" name="asistencia" required>
+          <option value="">Elegí una opción</option>
+          <option>Sí, ¡allí estaré!</option>
+          <option>No podré asistir</option>
+        </select>
+      </div>
+
+      <fieldset class="field">
+        <legend>¿Qué te gustaría tomar?</legend>
+        <div class="options">
+          <label><input type="checkbox" name="bebida" value="Agua"> Agua</label>
+          <label><input type="checkbox" name="bebida" value="Cerveza"> Cerveza</label>
+          <label><input type="checkbox" name="bebida" value="Whisky"> Whisky</label>
+          <label><input type="checkbox" name="bebida" value="Refresco común"> Refresco común</label>
+          <label><input type="checkbox" name="bebida" value="Refresco light"> Refresco light</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>¿Tenés alguna preferencia alimentaria?</legend>
+        <div class="options">
+          <label><input type="checkbox" name="dieta" value="Vegetariano/a"> Vegetariano/a</label>
+          <label><input type="checkbox" name="dieta" value="Celíaco/a"> Celíaco/a</label>
+          <label><input type="checkbox" name="dieta" value="Vegano/a"> Vegano/a</label>
+          <label><input type="checkbox" name="dieta" value="Ninguna"> Ninguna</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>¡Elegí tus sabores de pizza favoritos!</legend>
+        <div class="options">
+          <label><input type="checkbox" name="pizza" value="Pepperoni"> Pepperoni</label>
+          <label><input type="checkbox" name="pizza" value="Muzzarella sola"> Muzzarella sola</label>
+          <label><input type="checkbox" name="pizza" value="Cheddar y panceta"> Cheddar y panceta</label>
+          <label><input type="checkbox" name="pizza" value="Capresse"> Capresse</label>
+          <label><input type="checkbox" name="pizza" value="Jamón y huevo"> Jamón y huevo</label>
+          <label><input type="checkbox" name="pizza" value="Cebolla y morrón"> Cebolla y morrón</label>
+          <label><input type="checkbox" name="pizza" value="Huevo y choclo"> Huevo y choclo</label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="mensaje">¿Querés agregar algún comentario? (opcional)</label>
+        <textarea id="mensaje" rows="3" placeholder="Escribí aquí"></textarea>
+      </div>
+
+      <div style="text-align:center">
+        <button type="submit">Enviar respuestas por WhatsApp 💗</button>
+      </div>
+      <p class="note">
+        Al pulsar enviar, se abrirá WhatsApp con tus respuestas preparadas
+        para mandármelas. Tendrás que pulsar enviar allí.
+      </p>
+    </form>
+
+    <footer>
+      <div class="rule">✧ ❀ ✧</div>
+      <p>Los mejores regalos son los momentos compartidos.</p>
+      <p class="name">¡Te espero!</p>
+      <p class="gold">Con cariño, Mónica Alejandra ♡</p>
+    </footer>
+  </section>
+</main>
+
+<script>
+function abrirInvitacion() {
+  document.getElementById('cover').classList.add('closed');
+}
+
+const fechaFiesta = new Date('2026-11-21T13:00:00-03:00');
+
+function actualizarCuenta() {
+  const ahora = Date.now();
+  let restante = fechaFiesta.getTime() - ahora;
+  const contenedor = document.getElementById('countdown');
+
+  if (restante <= 0) {
+    contenedor.innerHTML = '<p>¡Llegó el gran día! 🎉</p>';
+    return;
+  }
+
+  const dia = Math.floor(restante / 86400000);
+  restante %= 86400000;
+  const hora = Math.floor(restante / 3600000);
+  restante %= 3600000;
+  const minuto = Math.floor(restante / 60000);
+  const segundo = Math.floor((restante % 60000) / 1000);
+
+  const valores = [dia, hora, minuto, segundo];
+  const etiquetas = ['Días', 'Horas', 'Minutos', 'Segundos'];
+
+  contenedor.innerHTML = valores.map((v, i) =>
+    '<div class="time"><strong>' + v + '</strong>' +
+    etiquetas[i] + '</div>'
+  ).join('');
+}
+
+actualizarCuenta();
+setInterval(actualizarCuenta, 1000);
+
+document.getElementById('rsvp').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const datos = new FormData(this);
+  const bebidas = datos.getAll('bebida');
+  const dietas = datos.getAll('dieta');
+  const pizzas = datos.getAll('pizza');
+
+  const mensaje = [
+    '¡Hola, Mónica! Te envío mis respuestas para NIVEL 50 DESBLOQUEADO 🎂',
+    '',
+    'Nombre: ' + datos.get('nombre'),
+    'Asistencia: ' + datos.get('asistencia'),
+    'Bebidas: ' + (bebidas.join(', ') || 'Sin preferencia indicada'),
+    'Preferencias alimentarias: ' + (dietas.join(', ') || 'Sin indicar'),
+    'Pizzas favoritas: ' + (pizzas.join(', ') || 'Sin indicar'),
+    'Comentario: ' + (document.getElementById('mensaje').value || 'Ninguno')
+  ].join('\n');
+
+  const telefono = '59895350876';
+  const url = 'https://wa.me/' + telefono + '?text=' +
+              encodeURIComponent(mensaje);
+
+  window.open(url, '_blank', 'noopener');
+});
+</script>
+</body>
+</html>
